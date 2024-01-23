@@ -1,0 +1,20 @@
+name: advent-of-code-2023
+
+type: ruby
+
+up:
+  - ruby: 3.3.0
+  - bundler
+
+commands:
+  console:
+    desc: 'start a console'
+    run: bin/console
+  run:
+    desc: 'start the application'
+    run: bin/run
+  test:
+    syntax:
+      argument: file
+      optional: args...
+    run: bin/testunit
